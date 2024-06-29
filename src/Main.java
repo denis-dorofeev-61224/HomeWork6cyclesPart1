@@ -1,4 +1,4 @@
-public class Main {
+public class Main{
     public static void main(String[] args) {
 
         System.out.println("Hello JavaDeveloper! It`s time to create.");
@@ -55,11 +55,12 @@ public class Main {
         System.out.println("***end of task8***");
 
         //task 9
-        int siquence2=12;//инициализировал длину последовательности
+        int salary=29000;
         double total=0;
-        for(int i=0;i<siquence;i++){
-            total+=i+29000+(29000/100);//29000+1% в месяц накопления за месяц
-            System.out.println("Сумма накоплений в этот месяц равна "+total+" рублей");}
+        for(int i=0;i<12;i++){
+            total=total+(total/100);
+            total+=total+salary;//29000+1% в месяц накопления за месяц
+            System.out.println("Месяц  "+i+" итого "+total+" рублей");}
         System.out.println("***end of task9***");
 
         //task 10
@@ -67,5 +68,8 @@ public class Main {
             System.out.println("2*"+i+"="+2*i);}
         System.out.println("***end of task 10***");
 
+
+
     }
+
 }
